@@ -1,7 +1,7 @@
-<content><![CDATA[@tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
-@apply bg-gray-900;
+  @apply bg-gray-900;
 }
-]]></content>
