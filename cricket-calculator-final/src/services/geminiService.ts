@@ -38,7 +38,7 @@ Your task is to:
             systemInstruction: systemInstruction,
         }
     });
-    return response.text;
+    return response.text ?? "The model did not return a response.";
   } catch (error) {
     console.error("Error communicating with Gemini:", error);
     return "Sorry, I encountered an error while trying to analyze the situation. Please check your Vercel project's Environment Variable (it should be named VITE_API_KEY) and ensure the key is correct.";
