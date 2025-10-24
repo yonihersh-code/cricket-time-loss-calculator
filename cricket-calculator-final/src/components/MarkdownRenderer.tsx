@@ -7,7 +7,7 @@ interface MarkdownRendererProps {
 const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
   const renderLines = () => {
     const lines = content.split('\n');
-    const elements = [];
+    const elements: React.ReactElement[] = [];
     let listType: 'ul' | 'ol' | null = null;
     let listItems: React.ReactElement[] = [];
 
